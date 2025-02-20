@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  transition: 250ms;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+html {
+  cursor: url("../pic/cursor.png"), auto;
+  font-family: "Nunito Sans", serif;
+}
+.container {
+  margin: auto;
+  max-width: 1280px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+/* DEFAULTE */
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* DEFAULTE */
