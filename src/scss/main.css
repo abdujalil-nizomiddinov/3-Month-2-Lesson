@@ -227,7 +227,7 @@ header::after {
 }
 .hero {
   padding-top: 75px;
-  height: 600px;
+  height: 500px;
   display: flex;
   justify-content: space-between;
   gap: 50px;
@@ -273,4 +273,83 @@ header::after {
 }
 .hero-title-tools span i {
   font-size: 32px;
+  color: white;
+  background: rgb(130, 216, 0);
+  border-radius: 50%;
+}
+.hero img {
+  max-width: 800px;
+  position: relative;
+  bottom: 0;
+  height: 550px;
+}
+
+.check {
+  display: flex;
+  margin-bottom: 200px;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+.check h2 {
+  font-size: 30px;
+}
+.check h2 span {
+  color: #7f2736;
+}
+.check p {
+  max-width: 600px;
+  text-align: center;
+}
+.check-slide {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.check-slide i {
+  font-size: 56px;
+  padding-bottom: 30px;
+}
+.check-slide_item {
+  display: flex;
+  position: relative;
+  gap: 25px;
+}
+.check-slide_item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+}
+.check-slide_item a img {
+  transition: 1000ms;
+  max-width: 345px;
+  height: auto;
+  aspect-ratio: 4/3;
+  display: block;
+  border-radius: 25px;
+}
+.check-slide_item a h3 {
+  color: #7f2736;
+}
+.check-slide_item a:hover .check-slide_item-hide {
+  bottom: 100px;
+  color: white;
+}
+.check-slide_item a:hover img {
+  filter: grayscale(100%);
+}
+.check-slide_item-hide {
+  display: flex;
+  transition: 500ms;
+  color: transparent;
+  position: absolute;
+  bottom: 50px;
+}
+.check-slide_item-hide:hover {
+  bottom: 100px;
+}
+.check-slide_item-hide p {
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

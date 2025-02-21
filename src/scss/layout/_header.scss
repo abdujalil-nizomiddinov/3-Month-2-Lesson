@@ -3,7 +3,7 @@
 
 .hero {
   padding-top: 75px;
-  height: 600px;
+  height: 500px;
   display: flex;
   justify-content: space-between;
   gap: 50px;
@@ -34,8 +34,17 @@
         gap: 10px;
         i {
           font-size: 32px;
+          color: white;
+          background: rgb(130, 216, 0);
+          border-radius:50% ;
         }
       }
     }
+  }
+  img {
+    max-width: 800px;
+    position: relative;
+    bottom: 0;
+    height: 550px;
   }
 }
