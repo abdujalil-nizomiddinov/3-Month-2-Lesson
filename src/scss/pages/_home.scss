@@ -2,4 +2,19 @@
 
 header {
   background: $primary;
+  position: relative;
+  margin-bottom: 400px;
+  &::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    right: -50%;
+    bottom: 0;
+    height: 400px;
+    background: $primary;
+    width: 120%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+  }
 }

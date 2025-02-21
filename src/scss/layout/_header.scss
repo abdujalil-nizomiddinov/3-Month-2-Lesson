@@ -1,0 +1,41 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variable" as *;
+
+.hero {
+  padding-top: 75px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  &-title {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    h1 {
+      font-size: 42px;
+      span {
+        color: #7f2736;
+      }
+    }
+    p {
+      max-width: 325px;
+      font-size: 14px;
+    }
+    &-tools {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      a {
+        @include primary-btn;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        i {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
